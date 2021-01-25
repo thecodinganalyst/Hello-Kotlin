@@ -13,3 +13,10 @@ fun main(){
 	println("There are ${user.length} characters in your name")
 }
 ```
+
+Result:
+
+```Bash
+Hello Dennis
+There are 6 characters in your name
+```
