@@ -24,11 +24,17 @@ By default, nulls are not allowed. Add a ? suffix to the Type to make it nullabl
 
 Example:
 ```kotlin
-val x = null
-println(x)
+fun main(){
+	var x :String? = "Nullable String"
+	println(x)
+
+	x = null
+	println(x)
+}
 ```
 
 Result:
 ```shell
+Nullable String
 null
 ```
