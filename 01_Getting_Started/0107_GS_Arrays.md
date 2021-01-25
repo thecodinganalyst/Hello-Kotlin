@@ -24,41 +24,30 @@ Define array by size and function:
 
 ## Other shortcut ways to create arrays
 
-### 1. Creating a list of values - `listOf`
+### 1. Creating a list of values - `arrayOf`
 
 ```kotlin
-val immutableArray = listOf(1, 2, 3)
-//immutableArray[2] = 4 - this will result in an error
-println("Immutable Array: ")
-immutableArray.forEach { println(it) }
-```
-
-Result:
-```shell
-Immutable Array:
-1
-2
-3
-```
-
-### 2. Creating a mutable list of values - `mutableListOf`
-
-```kotlin
-var mutableArray = mutableListOf("a", "b", "c")
+var mutableArray = arrayOf("a", "b", "c")
 mutableArray[2] = "d"
-println("Mutable Array: ")
+println("Array: ")
 mutableArray.forEach { println(it) }
 ```
 
 Result:
 ```shell
-Mutable Array:
+Array:
 a
 b
 d
 ```
 
-### 3. Creating arrays of primitive types - applicable for Byte, Short, Int, Long, Float, Double, Boolean, Char - `<Type>Array(size)`
+> Arrays are mutable by default
+
+> But the size cannot be increased/decreased
+
+### 2. Creating arrays of primitive types - `<Type>Array(size)`
+
+> Applicable for Byte, Short, Int, Long, Float, Double, Boolean, Char
 
 **a. Size of array**
 ```kotlin
@@ -107,7 +96,7 @@ Primitive Arrays (Default by function):
 2
 ```
 
-### 4. Initializing each value - `<type>ArrayOf(<List of Values>)`
+### 3. Initializing each value - `<type>ArrayOf(<List of Values>)`
 
 > Note the convention is camelCase instead of PascalCase
 

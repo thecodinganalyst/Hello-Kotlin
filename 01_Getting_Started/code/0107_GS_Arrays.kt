@@ -4,14 +4,9 @@ fun main(){
 	println("Define array by size and function: ")
 	sample.forEach { println(it) }
 
-	val immutableArray = listOf(1, 2, 3)
-	//immutableArray[2] = 4 - this will result in an error
-	println("Immutable Array: ")
-	immutableArray.forEach { println(it) }
-
-	var mutableArray = mutableListOf("a", "b", "c")
+	var mutableArray = arrayOf("a", "b", "c")
 	mutableArray[2] = "d"
-	println("Mutable Array: ")
+	println("Array: ")
 	mutableArray.forEach { println(it) }
 
 	var intArray = IntArray(3)
