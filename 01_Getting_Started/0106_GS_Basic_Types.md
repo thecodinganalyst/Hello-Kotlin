@@ -13,10 +13,12 @@ The basic data types are as follows
 
 ### Explicit declaration of non default number types:
 
-Long -> 12345L
-Hexadecimal -> 0x0F
-Binaries -> 0b01011110
-Float -> 12.34f
+| Type        | Example     |
+|-------------|-------------|
+| Long        | 12345L      |
+| Hexadecimal | 0x0F        |
+| Binaries    | 0b01011110  |
+| Float       | 12.34f      |
 
 ### Underscores can be used to make numbers more readable
 
