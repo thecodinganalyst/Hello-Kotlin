@@ -60,7 +60,7 @@ d
 
 ### 3. Creating arrays of primitive types - applicable for Byte, Short, Int, Long, Float, Double, Boolean, Char - `<Type>Array(size)`
 
-a. Size of array
+**a. Size of array**
 ```kotlin
 var intArray = IntArray(3)
 println("Primitive Arrays (Default 0): ")
@@ -76,7 +76,7 @@ Primitive Arrays (Default 0):
 0
 ```
 
-b. Size of array and Default value
+**b. Size of array and Default value**
 ```kotlin
 intArray = IntArray(3) { 9 }
 println("Primitive Arrays (Default provided): ")
@@ -91,7 +91,7 @@ Primitive Arrays (Default provided):
 9
 ```
 
-c. Size of array and function to initialize values
+**c. Size of array and function to initialize values**
 
 ```kotlin
 intArray = IntArray(3) { it * 1 }
